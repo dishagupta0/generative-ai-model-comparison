@@ -25,9 +25,9 @@ How do VAE, GAN, and diffusion approaches compare in image quality and training 
 
 | Model | Training epochs | Selected configuration | FID ↓ |
 | --- | ---: | --- | ---: |
-| **DDPM** | 30 | 200 diffusion steps; learning rate 0.0001 | **64.44** |
-| **VAE** | 30 | Latent dimension 40; β = 0.01; learning rate 0.0003 | 95.70 |
-| **GAN** | 40 | Latent dimension 100; learning rate 0.0001 | 171.01 |
+| **DDPM** | 30 | 200 diffusion steps; learning rate 0.0001 | **38.61** |
+| **VAE** | 30 | Latent dimension 40; β = 0.01; learning rate 0.0003 | 85.54 |
+| **GAN** | 40 | Latent dimension 100; learning rate 0.0001 | 133.96 |
 
 These are results from my Fashion-MNIST experiments, rather than claims about the general performance of these architectures. FID values depend on the implementation, sampling procedure, and feature extractor.
 
