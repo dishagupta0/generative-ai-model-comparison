@@ -31,6 +31,17 @@ How do VAE, GAN, and diffusion approaches compare in image quality and training 
 
 These are results from my Fashion-MNIST experiments, rather than claims about the general performance of these architectures. FID values depend on the implementation, sampling procedure, and feature extractor.
 
+Below is a visual comparison of the best Fashion-MNIST outputs from the three generative models.
+
+![Fashion-MNIST model comparison](fashion-mnist-results.png)
+
+### Best observed FID scores
+- **VAE:** 85.54
+- **GAN:** 133.96
+- **Diffusion:** 38.61
+
+Among the three approaches, the diffusion model produced the best image quality and diversity, reflected in both the strongest qualitative samples and the lowest FID score.
+
 ## What I learned
 
 1. **Evaluation needs multiple perspectives.** A numerical score is helpful, but looking at generated image grids revealed repetition and uneven representation of clothing categories.
